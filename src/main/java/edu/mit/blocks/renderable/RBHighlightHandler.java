@@ -84,7 +84,9 @@ public class RBHighlightHandler extends JComponent implements ComponentListener,
             SwingUtilities.invokeLater(new Runnable() {
 
                 public void run() {
+                	try{
                     updateBounds();
+                	}catch(Error e) {}
                 }
             });
         }
